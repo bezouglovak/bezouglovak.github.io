@@ -280,7 +280,7 @@ section .content-inner {
   border: 2px solid #e3a2a2;
 }
 
-#skills .heading {
+#skills .heading, #work .heading {
   color: #ffffff;
 }
 
@@ -374,16 +374,6 @@ svg {
   color:#e3a2a2;
 }
 
-/*.even {
-  border-left: 2px solid  #e3a2a2;
-  padding-left: 20%;
-}
-
-.odd {
-  border-right: 2px solid  #e3a2a2;
-  padding-right: 20%;
-}*/
-
 .date {
   color: #e3a2a2;
   font-size: 1.3rem;
@@ -392,4 +382,62 @@ svg {
 .experience-block h3 {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+#services {
+  color: #ffffff;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+#services .row {
+  padding: 10% 0 5% 0;
+}
+
+#services .row:nth-child(2) {
+  padding: 5% 0 5% 0;
+}
+
+#services .fa {
+  margin: 10% auto;
+}
+
+#services h3 {
+  padding-top: 20%;
+}
+
+.hexagon {
+  position: relative;
+  width: 150px;
+  height: 86.60px;
+  background-color: rgba(227, 162, 162, 0);
+  margin: auto;
+  border-left: solid 3px #ffffff;
+  border-right: solid 3px #ffffff;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 106.07px;
+  height: 106.07px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 18.9670px;
+}
+
+.hexagon:before {
+  top: -53.0330px;
+  border-top: solid 4.2426px #ffffff;
+  border-right: solid 4.2426px #ffffff;
+}
+
+.hexagon:after {
+  bottom: -53.0330px;
+  border-bottom: solid 4.2426px #ffffff;
+  border-left: solid 4.2426px #ffffff;
 }
