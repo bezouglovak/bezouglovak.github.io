@@ -8,6 +8,9 @@ body {
   padding: 0;
   border: 0;
   vertical-align: baseline;
+  font-family: 'Yantramanav', sans-serif;
+  letter-spacing: 0.5px;
+  color: #474747;
 }
 
 html,body
@@ -37,7 +40,9 @@ canvas {
   top: -150px;
   height: 75px;
   transition: 500ms;
-  background-color: red;
+  background-color: white;
+  border-bottom: 1px solid #e3a2a2;
+  z-index: 1;
 }
 
 .active {
@@ -59,7 +64,15 @@ li {
 
 ul li a {
   text-decoration: none;
-  color: white;
+  color: #e3a2a2;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: #c27777;
 }
 
 .btn-nav {
@@ -71,9 +84,27 @@ ul li a {
   box-sizing: border-box;
   cursor: pointer;
   background: white;
+  opacity: 0.8;
   border: none;
   outline: none;
   z-index: 9999;
+}
+
+.btn-active {
+  top: 100px;
+  transition: 0.3s;
+}
+
+.btn-nav:hover {
+  background: #c27777;
+}
+
+.btn-nav:active {
+  background: #c27777;
+}
+
+.btn-nav:focus {
+  background: #c27777;
 }
 
 .btn-nav span {
@@ -111,9 +142,202 @@ ul li a {
 }
 
 .jumbotron {
+  margin: auto;
   background-size: cover;
   background-color: #e3a2a2;
   background-repeat: no-repeat;
   text-align: center;
   min-height: 1000px;
+}
+
+.container-fluid {
+  position: relative;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+}
+
+.home-content {
+  text-align: center;
+  position: relative;
+  padding: 100px 100px;
+}
+
+#home .content-inner {
+  padding-top: 200px;
+}
+
+section .content-inner {
+    overflow: hidden;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.home-text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 3rem;
+    border: 2px solid white;
+    width: 600px;
+    height: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.home-text .fname {
+  font-weight: 300;
+}
+
+.home-text .lname {
+  font-weight: 700;
+  opacity: 0.5;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Yellowtail', cursive;
+  font-size: 1.8rem;
+  padding-bottom: 50px;
+  padding-top: 0;
+}
+
+.row {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.row .col-md-4 {
+  width: 33.3333333333;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.row .col-md-8 {
+  width: 65%;
+}
+
+.id-photo {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 40px;
+}
+
+#about {
+  background-color: #ffffff;
+  height: 700px;
+  font-size: 1.3rem;
+}
+
+#about .heading, #experience .heading, #work .heading {
+  color: #e3a2a2;
+}
+
+#about .container {
+  padding: 0 200px 0 200px;
+}
+
+#about .row .col-md-4 {
+  width: 30%;
+}
+
+#about .row .col-md-8 {
+  width: 65%;
+  padding-left: 20%;
+}
+
+#about h3 {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  color: #e3a2a2;
+  letter-spacing: 2px;
+}
+
+.contact-btn {
+  margin-top: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.contact-btn a {
+  color: #e3a2a2;
+}
+
+.contact-btn a:hover {
+  background-color: #e3a2a2;
+  color: #ffffff;
+}
+
+#about .btn-outline-primary {
+  border: 2px solid #e3a2a2;
+}
+
+#skills .heading {
+  color: #ffffff;
+}
+
+.circle {
+  width: 200px;
+  margin: auto;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.circle h3 {
+  color: #ffffff;
+  font-size: 1.8em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#skills strong {
+  position: absolute;
+  top: 25%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	line-height: 45px;
+  font-size: 2.8rem;
+  color: #ffffff;
+}
+
+/*$progress-bar-stroke-width: 1;
+$progress-bar-size: 150px;*/
+
+svg {
+  height: 200px;
+  transform: rotate(-90deg);
+  /*width: 2;*/
+}
+
+.progress-bar__background {
+  fill: none;
+  stroke: #f1d1d1;
+  stroke-width: $progress-bar-stroke-width;
+}
+
+.progress-bar__progress {
+  fill: none;
+  stroke: #f1d1d1;
+  stroke: #ffffff;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-linecap: round;
+  stroke-width: $progress-bar-stroke-width;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+#experience {
+  background-color:  #ffffff;
+  height: 1000px;
+  font-size: 1.3rem;
 }

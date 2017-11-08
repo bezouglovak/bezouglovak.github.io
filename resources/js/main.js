@@ -1,67 +1,40 @@
 $(document).ready(function() {
   $('.btn-nav').click(function() {
-    $('.topbar').toggleClass('active');
+    $('.topbar').toggleClass('active'),
+    $('.btn-nav').toggleClass('btn-active');
   })
-})
 
-// $(document).ready(function() {
-//
-//   $('#ps-circle').circleProgress({
-//     value: 0.90,
-//     size: 80,
-//     lineCap: "round",
-//     emptyFill: "rgba(0, 0, 0, .1)",
-//     fill: {
-//       color: "white"
-//     }
-//   });
-//
-//   $('#il-circle').circleProgress({
-//     value: 0.80,
-//     size: 80,
-//     lineCap: "round",
-//     emptyFill: "rgba(0, 0, 0, .1)",
-//     fill: {
-//       color: "white"
-//     }
-//   });
-//
-//   $('#ae-circle').circleProgress({
-//     value: 0.70,
-//     size: 80,
-//     lineCap: "round",
-//     emptyFill: "rgba(0, 0, 0, .1)",
-//     fill: {
-//       color: "white"
-//     }
-//   });
-//
-//   $('#id-circle').circleProgress({
-//     value: 0.70,
-//     size: 80,
-//     lineCap: "round",
-//     emptyFill: "rgba(0, 0, 0, .1)",
-//     fill: {
-//       color: "white"
-//     }
-//   });
-//
-//   $('#hc-circle').circleProgress({
-//     value: 0.85,
-//     size: 80,
-//     lineCap: "round",
-//     emptyFill: "rgba(0, 0, 0, .1)",
-//     fill: {
-//       color: "white"
-//     }
-//   });
-//
-//   $('#ja-circle').circleProgress({
-//     value: 0.70,
-//     size: 80,
-//     lineCap: "round",
-//     emptyFill: "rgba(0, 0, 0, .1)",
-//     fill: {
-//       color: "white"
-//     }
-//   });
+  //PROGRESS BAR
+
+  var percentageComplete = 0.9;
+  var strokeDashOffsetValue = 100 - (percentageComplete * 77);
+  var progressBar = $("#ps-circle .js-progress-bar");
+  progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+
+  var percentageComplete = 0.8;
+  var strokeDashOffsetValue = 100 - (percentageComplete * 80);
+  var progressBar = $("#il-circle .js-progress-bar");
+  progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+
+  var percentageComplete = 0.7;
+  var strokeDashOffsetValue = 100 - (percentageComplete * 75);
+  var progressBar = $("#ae-circle .js-progress-bar");
+  progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+
+  var percentageComplete = 0.65;
+  var strokeDashOffsetValue = 100 - (percentageComplete * 75);
+  var progressBar = $("#id-circle .js-progress-bar");
+  progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+
+  var percentageComplete = 0.85;
+  var strokeDashOffsetValue = 100 - (percentageComplete * 79);
+  var progressBar = $("#hc-circle .js-progress-bar");
+  progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+
+  var percentageComplete = 0.7;
+  var strokeDashOffsetValue = 100 - (percentageComplete * 75);
+  var progressBar = $("#ja-circle .js-progress-bar");
+  progressBar.css("stroke-dashoffset", strokeDashOffsetValue);
+
+
+});

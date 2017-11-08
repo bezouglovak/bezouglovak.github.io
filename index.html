@@ -10,20 +10,21 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/animate.css" type="text/css" rel="stylesheet">
-    <script src="jquery-circle-progress-1.1.2/dist/circle-progress.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:300,400,700|Yantramanav|Yellowtail" rel="stylesheet">
   </head>
   <body>
     <!-- NAV START -->
     <div id="particles-js">
       <div class="topbar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">My Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <button type="button" class="btn btn-primary btn-nav">
           <span></span>
@@ -37,86 +38,159 @@
     <!-- HOME START -->
     <section id="home">
       <div class="jumbotron">
-        <div class="container">
-          <div class="home-content">
-            <h1 class="home-text">
+        <div class="content-inner">
+          <div class="container-fluid">
+            <div class="home-content">
+            <div class="home-text">
               <span class="fname">KRISTINA</span><span class="lname">BEZOUGLOVA</span>
-            </h1>
+            </div>
             <span class="animated-letters">
               <!-- TO BE EDITED -->
             </span>
           </div>
+          </div>
         </div>
       </div>
-      <a class="btn btn-primary" href="#" role="button">Contact</a>
     </section>
     <!-- HOME END -->
 
     <!-- ABOUT START -->
-    <section id="About">
-      <div class="container">
-        <header class="heading">
-          <h2>About</h2>
-        </header>
-        </div>
-        <div class="row">
-          <div class="col-xs-6 col-md-4">
-            <div class="id-photo">
-              <img src="#" width="250" height="250" class="photo">
+    <section id="about">
+      <div class="content-inner">
+        <div class="container">
+          <header class="heading">
+            <h2>About</h2>
+          </header>
+          <div class="row">
+            <div class="col-xs-6 col-md-4">
+              <div class="id-photo">
+                <img src="./resources/images/self.png" width="250" height="250" class="photo">
+              </div>
+            </div>
+            <div class="col-xs-8 col-md-8">
+              <h3>NAME</h3>
+              <p>Kristina Bezouglova</p>
+              <h3>E-MAIL</h3>
+              <p>bezouglovak@gmail.com</p>
+              <div class="contact-btn">
+                <a class="btn btn-outline-primary" href="#contact" role="button">Contact</a>
+              </div>
             </div>
           </div>
-          <div class="col-xs-8 col-md-4">
-            <h3>NAME</h3>
-            <p>Kristina Bezouglova</p>
-            <h3>E-MAIL</h3>
-            <p>bezouglovak@gmail.com</p>
+          <div class="row col-md-12">
+            <p>Hello! My name is Kristina Bezouglova and I am a 23 year old graphic designer and front end web developer based in Philadelphia. blah blah blah tbe</p>
           </div>
-        </div>
-        <div class="row">
-          <p>Hello! My name is Kristina Bezouglova and I am a 23 year old graphic designer and front end web developer based in Philadelphia. blah blah blah tbe</p>
         </div>
     </section>
     <!-- ABOUT END -->
 
     <!-- SKILLS START -->
     <section id ="skills">
-      <div class="container">
-        <header class="heading">
-          <h2>Skills</h2>
-        </header>
-      </div>
-      <div class="row skills">
-        <div class="col-xs-6 col-md-4">
-          <div id="ps-circle"></div>
-          <strong>90%</strong>
-          <h3>Photoshop</h3>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div id="il-circle"></div>
-          <strong>80%</strong>
-          <h3>Illustrator</h3>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div id="ae-circle"></div>
-          <strong>70%</strong>
-          <h3>After Effects</h3>
-        </div>
-      </div>
-      <div class="row skills">
-        <div class="col-xs-6 col-md-4">
-          <div id="id-circle"></div>
-          <strong>65%</strong>
-          <h3>InDesign</h3>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div id="hc-circle"></div>
-          <strong>85%</strong>
-          <h3>HTML5 + CSS3</h3>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div id="ja-circle"></div>
-          <strong>70%</strong>
-          <h3>Javascript</h3>
+      <div class="content-inner">
+        <div class="container">
+          <header class="heading">
+            <h2>Skills</h2>
+          </header>
+          <div class="row skills">
+            <div class="col-xs-6 col-md-4">
+              <div class="circle" id="ps-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="-1 -1 34 34">
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__background" />
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__progress
+                                 js-progress-bar" />
+                </svg>
+                <strong>90%</strong>
+                <h3>PHOTOSHOP</h3>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="circle" id="il-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="-1 -1 34 34">
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__background" />
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__progress
+                                 js-progress-bar" />
+                </svg>
+                <strong>80%</strong>
+                <h3>ILLUSTRATOR</h3>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="circle" id="ae-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="-1 -1 34 34">
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__background" />
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__progress
+                                 js-progress-bar" />
+                </svg>
+                <strong>70%</strong>
+                <h3>AFTER EFFECTS</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row skills">
+            <div class="col-xs-6 col-md-4">
+              <div class="circle" id="id-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="-1 -1 34 34">
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__background" />
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__progress
+                                 js-progress-bar" />
+                </svg>
+                <strong>65%</strong>
+                <h3>InDESIGN</h3>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="circle" id="hc-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="-1 -1 34 34">
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__background" />
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__progress
+                                 js-progress-bar" />
+                </svg>
+                <strong>85%</strong>
+                <h3>HTML5 + CSS3</h3>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <div class="circle" id="ja-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     viewBox="-1 -1 34 34">
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__background" />
+
+                  <circle cx="16" cy="16" r="12"
+                          class="progress-bar__progress
+                                 js-progress-bar" />
+                </svg>
+                <strong>70%</strong>
+                <h3>JAVASCRIPT</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -124,74 +198,77 @@
 
     <!-- EXPERIENCE START -->
     <section id="experience">
-      <div class="container">
-        <header class="heading">
-          <h2>Education and Experience</h2>
-        </header>
-        <div class="experience">
-          <div class="experience-block">
-            <div class="icon wow bounceIn">
-              <i class="fa fa-briefcase"></i>
+      <div class="content-inner">
+        <div class="container">
+          <header class="heading">
+            <h2>Education and Experience</h2>
+          </header>
+          <div class="experience">
+            <div class="experience-block">
+              <div class="icon wow bounceIn">
+                <i class="fa fa-briefcase"></i>
+              </div>
+              <div class="experience-block-content wow fadeInRight">
+                <div class="date">2014+</div>
+                <h3>Secretary - Eviama Life Spa</h3>
+                <p>Managed appointments and filed client information. Organized schedules, events, large parties. Maintained contact between the business and PR Manager.
+                  Designed advertisements and graphics for magazines and events.Sold and informed customers on products offered.</p>
+              </div>
             </div>
-            <div class="experience-block-content wow fadeInRight">
-              <div class="date">2014+</div>
-              <h3>Secretary - Eviama Life Spa</h3>
-              <p>Managed appointments and filed client information. Organized schedules, events, large parties. Maintained contact between the business and PR Manager.
-                Designed advertisements and graphics for magazines and events.Sold and informed customers on products offered.</p>
+            <div class="experience-block">
+              <div class="icon wow bounceIn">
+                <i class="fa fa-mortar-board"></i>
+              </div>
+              <div class="experience-block-content wow fadeInLeft">
+                <div class="date">September 2017 - October 2017</div>
+                <h3>New York Code + Design Academy</h3>
+                <p>Honed and utilized HTML5, CSS3, Javascript, Jquery, and Git skills to create a variety of projects.</p>
+              </div>
             </div>
-          </div>
-          <div class="experience-block">
-            <div class="icon wow bounceIn">
-              <i class="fa fa-mortar-board"></i>
+            <div class="experience-block">
+              <div class="icon wow bounceIn">
+                <i class="fa fa-mortar-board"></i>
+              </div>
+              <div class="experience-block-content wow fadeInRight">
+                <div class="date">August 2017 - October 2-17</div>
+                <h3>Codecademy PRO</h3>
+                <p>Learned HTML5, CSS3, and Javascript to create a variety of functioning and responsive webpages. Translated design documents to front-end code.
+                Built mobile-responsive websites with an understanding of cross-browser design and debugging.</p>
+              </div>
             </div>
-            <div class="experience-block-content wow fadeInLeft">
-              <div class="date">September 2017 - October 2017</div>
-              <h3>New York Code + Design Academy</h3>
-              <p>TBE TBE TBE TBE TBE</p>
+            <div class="experience-block">
+              <div class="icon wow bounceIn">
+                <i class="fa fa-briefcase"></i>
+              </div>
+              <div class="experience-block-content wow fadeInLeft">
+                <div class="date">February 2017 - June 2017</div>
+                <h3>Graphic Design Intern - The Wilson Concept</h3>
+                <p>Designed logos and business cards for a variety of clients.</p>
+              </div>
             </div>
-          </div>
-          <div class="experience-block">
-            <div class="icon wow bounceIn">
-              <i class="fa fa-mortar-board"></i>
+            <div class="experience-block">
+              <div class="icon wow bounceIn">
+                <i class="fa fa-briefcase"></i>
+              </div>
+              <div class="experience-block-content wow fadeInRight">
+                <div class="date">September 2012 - July 2016</div>
+                <h3>Drexel University B.Sc. Game Art and Production</h3>
+                <p>Cum Laude
+                  Drexel University Dean’s List - Fall 2012, Winter 2013, Spring 2014</p>
+              </div>
             </div>
-            <div class="experience-block-content wow fadeInRight">
-              <div class="date">August 2017 - October 2-17</div>
-              <h3>Codecademy PRO</h3>
-              <p>TBE TBE TBE TBE TBE TBE</p>
-            </div>
-          </div>
-          <div class="experience-block">
-            <div class="icon wow bounceIn">
-              <i class="fa fa-briefcase"></i>
-            </div>
-            <div class="experience-block-content wow fadeInLeft">
-              <div class="date">February 2017 - June 2017</div>
-              <h3>Graphic Design Intern - The Wilson Concept</h3>
-              <p>Designed logos and business cards for a variety of clients.</p>
-            </div>
-          </div>
-          <div class="experience-block">
-            <div class="icon wow bounceIn">
-              <i class="fa fa-briefcase"></i>
-            </div>
-            <div class="experience-block-content wow fadeInRight">
-              <div class="date">September 2012 - July 2016</div>
-              <h3>Drexel University B.Sc. Game Art and Production</h3>
-              <p>Cum Laude
-                Drexel University Dean’s List - Fall 2012, Winter 2013, Spring 2014</p>
-            </div>
-          </div>
-          <div class="experience-block">
-            <div class="icon wow bounceIn">
-              <i class="fa fa-briefcase"></i>
-            </div>
-            <div class="experience-block-content wow fadeInLeft">
-              <div class="date">March 2016 - September 2016</div>
-              <h3>Intern - Amanda Stevenson Photography</h3>
-              <p>Assembled equipment and assisted in photo shoots. Retouched photos in Lightroom and Photoshop.
-                Upgraded previous business card designs to include QR code.
-                Designed a step-and-repeat, gift certificates and email ca paigns to  promote the business at the Business Expo at the Union League.
-                Compiled sequences of images to create gifs for 360 product photography.</p>
+            <div class="experience-block">
+              <div class="icon wow bounceIn">
+                <i class="fa fa-briefcase"></i>
+              </div>
+              <div class="experience-block-content wow fadeInLeft">
+                <div class="date">March 2016 - September 2016</div>
+                <h3>Intern - Amanda Stevenson Photography</h3>
+                <p>Assembled equipment and assisted in photo shoots. Retouched photos in Lightroom and Photoshop.
+                  Upgraded previous business card designs to include QR code.
+                  Designed a step-and-repeat, gift certificates and email ca paigns to  promote the business at the Business Expo at the Union League.
+                  Compiled sequences of images to create gifs for 360 product photography.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -201,32 +278,34 @@
 
     <!-- SERVICES START -->
     <section id ="services">
-      <div class="container">
-        <header class="heading">
-          <h2>Skills</h2>
-        </header>
-        <div class="row services">
-          <div class="col-xs-6 col-md-4">
-            <i class="fa "></i>
-            <h3>Ideas</h3>
+      <div class="content-inner">
+        <div class="container">
+          <header class="heading">
+            <h2>Skills</h2>
+          </header>
+          <div class="row services">
+            <div class="col-xs-6 col-md-4">
+              <i class="fa "></i>
+              <h3>Ideas</h3>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <i class="fa "></i>
+              <h3>UI/UX</h3>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <i class="fa "></i>
+              <h3>Web Development</h3>
+            </div>
           </div>
-          <div class="col-xs-6 col-md-4">
-            <i class="fa "></i>
-            <h3>UI/UX</h3>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <i class="fa "></i>
-            <h3>Web Development</h3>
-          </div>
-        </div>
-        <div class="row services">
-          <div class="col-md-6">
-            <i class="fa "></i>
-            <h3>Illustration</h3>
-          </div>
-          <div class="col-md-6">
-            <i class="fa "></i>
-            <h3>Logo and Branding</h3>
+          <div class="row services">
+            <div class="col-md-6">
+              <i class="fa "></i>
+              <h3>Illustration</h3>
+            </div>
+            <div class="col-md-6">
+              <i class="fa "></i>
+              <h3>Logo and Branding</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -235,149 +314,151 @@
 
     <!-- WORK START -->
     <section id="work">
-      <div class="container">
-        <header class="heading">
-          <h2>My Work</h2>
-        </header>
-        <div class="row work">
-          <div class="col-xs-6 col-md-4">
-            <a href="#project-popup-1" class="project-link">
-              <span class="project-icon">
-                <img src="./resources/images/project-icon-1.png">
-              </span>
-            </a>
-            <div id="project-details-1" class="popup">
-              <span class="close">&times;</span>
-              <figure>
-                <div class="carousel">
-                  <img src="./resources/images/asp/cards-1.jpg">
-                  <img src="./resources/images/asp/cards-2.jpg">
-                  <img src="./resources/images/asp/camera-icons.jpg">
-                  <img src="./resources/images/asp/giftcard.jpg">
-                  <img src="./resources/images/asp/qrcodes.jpg">
-                  <img src="./resources/images/asp/resume.jpg">
-                  <img src="./resources/images/asp/stepandrepeat.jpg">
+      <div class="content-inner">
+        <div class="container">
+          <header class="heading">
+            <h2>My Work</h2>
+          </header>
+          <div class="row work">
+            <div class="col-xs-6 col-md-4">
+              <a href="#project-popup-1" class="project-link">
+                <span class="project-icon">
+                  <img src="./resources/images/project-icon-1.png">
+                </span>
+              </a>
+              <div id="project-details-1" class="popup">
+                <span class="close">&times;</span>
+                <figure>
+                  <div class="carousel">
+                    <img src="./resources/images/asp/cards-1.jpg">
+                    <img src="./resources/images/asp/cards-2.jpg">
+                    <img src="./resources/images/asp/camera-icons.jpg">
+                    <img src="./resources/images/asp/giftcard.jpg">
+                    <img src="./resources/images/asp/qrcodes.jpg">
+                    <img src="./resources/images/asp/resume.jpg">
+                    <img src="./resources/images/asp/stepandrepeat.jpg">
+                  </div>
+                </figure>
+                <div class="popup-content">
+                  <h3>Amanda Stevenson Photography</h3>
+                  <p>Amanda Stevenson Photography is an independent Philadelphia-based photographed I did my co-op with during the spring and summer of 2015.
+                    I interned with her as a graphic designer. During my time with her is also when I realized I enjoyed doing more graphic work than the 3D focused work I was doing at school.
+                    Over the six months I spent working with her, I re-branded, created several business cards, and a few other elements for her business to draw in clients.</p>
                 </div>
-              </figure>
-              <div class="popup-content">
-                <h3>Amanda Stevenson Photography</h3>
-                <p>Amanda Stevenson Photography is an independent Philadelphia-based photographed I did my co-op with during the spring and summer of 2015.
-                  I interned with her as a graphic designer. During my time with her is also when I realized I enjoyed doing more graphic work than the 3D focused work I was doing at school.
-                  Over the six months I spent working with her, I re-branded, created several business cards, and a few other elements for her business to draw in clients.</p>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#project-popup-2" class="project-link">
+                <span class="project-icon">
+                  <img src="./resources/images/project-icon-2.png">
+                </span>
+              </a>
+              <div id="project-details-2" class="popup">
+                <span class="close">&times;</span>
+                <figure>
+                  <div class="carousel">
+                    <img src="./resources/images/lmb/logo.jpg">
+                    <img src="./resources/images/lmb/cards-1.jpg">
+                    <img src="./resources/images/lmb/cards-2.jpg">
+                  </div>
+                </figure>
+                <div class="popup-content">
+                  <h3>Lorina Marshall-Blake</h3>
+                  <p>Lorina Marshall Blake is another client I had the pleasure of creating a logo for during my internship for The Wilson Concept.
+                    Lorina describes herself as an out-of-the-box person and wanted her brand to make a statement. She was very fond of golds, teals, and rose colors.
+                    She wanted her brand to make a bold yet feminine appearance. At first, I wanted to create a seamless ribbon-like logo for Lorina.
+                    It was bold and had the colors she liked, but it was a bit too intricate as a logo. Instead, I decided to incorporate a rose into her logo design and I was very pleased with how it turned out.
+                    I also created some business card mock-ups to go along with the new logo and following the outline given to me from a project brief which included the tagline.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-4">
+              <a href="#project-popup-3" class="project-link">
+                <span class="project-icon">
+                  <img src="./resources/images/project-icon-3.png">
+                </span>
+              </a>
+              <div id="project-details-3" class="popup">
+                <span class="close">&times;</span>
+                <figure>
+                  <div class="carousel">
+                    <img src="./resources/images/epos/epos-old.jpg">
+                    <img src="./resources/images/epos/epos-final.jpg">
+                    <img src="./resources/images/epos/cards.jpg">
+                  </div>
+                </figure>
+                <div class="popup-content">
+                  <h3>EPOS</h3>
+                  <p>EPOS is an online graphic novel company with not much of a backstory but I still wanted to showcase my work I did for them.
+                    They were my second client I designed logos for while interning at The Wilson Concept.</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#project-popup-2" class="project-link">
-              <span class="project-icon">
-                <img src="./resources/images/project-icon-2.png">
-              </span>
-            </a>
-            <div id="project-details-2" class="popup">
-              <span class="close">&times;</span>
-              <figure>
-                <div class="carousel">
-                  <img src="./resources/images/lmb/logo.jpg">
-                  <img src="./resources/images/lmb/cards-1.jpg">
-                  <img src="./resources/images/lmb/cards-2.jpg">
+          <div class="row work">
+            <div class="col-xs-6 col-md-4">
+              <a href="#project-popup-4" class="project-link">
+                <span class="project-icon">
+                  <img src="./resources/images/project-icon-4.png">
+                </span>
+              </a>
+              <div id="project-details-4" class="popup">
+                <span class="close">&times;</span>
+                <figure>
+                  <div class="carousel">
+                    <img src="./resources/images/zv/logo-old.jpg">
+                    <img src="./resources/images/zv/logo-final.png">
+                  </div>
+                </figure>
+                <div class="popup-content">
+                  <h3>ZV Body Shop</h3>
+                  <p>ZV Body Shop is an up and coming auto and body shop business in the Northeast Philadelphia region. They approached me for a basic logo to represent the business.</p>
                 </div>
-              </figure>
-              <div class="popup-content">
-                <h3>Lorina Marshall-Blake</h3>
-                <p>Lorina Marshall Blake is another client I had the pleasure of creating a logo for during my internship for The Wilson Concept.
-                  Lorina describes herself as an out-of-the-box person and wanted her brand to make a statement. She was very fond of golds, teals, and rose colors.
-                  She wanted her brand to make a bold yet feminine appearance. At first, I wanted to create a seamless ribbon-like logo for Lorina.
-                  It was bold and had the colors she liked, but it was a bit too intricate as a logo. Instead, I decided to incorporate a rose into her logo design and I was very pleased with how it turned out.
-                  I also created some business card mock-ups to go along with the new logo and following the outline given to me from a project brief which included the tagline.</p>
               </div>
             </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#project-popup-3" class="project-link">
-              <span class="project-icon">
-                <img src="./resources/images/project-icon-3.png">
-              </span>
-            </a>
-            <div id="project-details-3" class="popup">
-              <span class="close">&times;</span>
-              <figure>
-                <div class="carousel">
-                  <img src="./resources/images/epos/epos-old.jpg">
-                  <img src="./resources/images/epos/epos-final.jpg">
-                  <img src="./resources/images/epos/cards.jpg">
+            <div class="col-xs-6 col-md-4">
+              <a href="#project-popup-5" class="project-link">
+                <span class="project-icon">
+                  <img src="./resources/images/project-icon-5.png">
+                </span>
+              </a>
+              <div id="project-details-5" class="popup">
+                <span class="close">&times;</span>
+                <figure>
+                  <div class="carousel">
+                    <img src="./resources/images/lena/logo-1.jpg">
+                    <img src="./resources/images/lena/logo-2.jpg">
+                    <img src="./resources/images/lena/logo-3.jpg">
+                    <img src="./resources/images/lena/logo-final.jpg">
+                    <img src="./resources/images/lena/cards.jpg">
+                  </div>
+                </figure>
+                <div class="popup-content">
+                  <h3>Glorious Flowers</h3>
+                  <p>Glorious Flowers is an independent flower arrangement business. As a business getting up on their feet, the owner asked me to create a logo that reflects her personality as well as the business.</p>
                 </div>
-              </figure>
-              <div class="popup-content">
-                <h3>EPOS</h3>
-                <p>EPOS is an online graphic novel company with not much of a backstory but I still wanted to showcase my work I did for them.
-                  They were my second client I designed logos for while interning at The Wilson Concept.</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="row work">
-          <div class="col-xs-6 col-md-4">
-            <a href="#project-popup-4" class="project-link">
-              <span class="project-icon">
-                <img src="./resources/images/project-icon-4.png">
-              </span>
-            </a>
-            <div id="project-details-4" class="popup">
-              <span class="close">&times;</span>
-              <figure>
-                <div class="carousel">
-                  <img src="./resources/images/zv/logo-old.jpg">
-                  <img src="./resources/images/zv/logo-final.png">
+            <div class="col-xs-6 col-md-4">
+              <a href="#project-popup-6" class="project-link">
+                <span class="project-icon">
+                  <img src="./resources/images/project-icon-6.png">
+                </span>
+              </a>
+              <div id="project-details-6" class="popup">
+                <span class="close">&times;</span>
+                <figure>
+                  <div class="carousel">
+                    <img src="./resources/images/pixelart/p-1.gif">
+                    <img src="./resources/images/pixelart/p-2.gif">
+                    <img src="./resources/images/pixelart/p-3.jpg">
+                  </div>
+                </figure>
+                <div class="popup-content">
+                  <h3>Pixel Art</h3>
+                  <p>EPOS is an online graphic novel company with not much of a backstory but I still wanted to showcase my work I did for them.
+                    They were my second client I designed logos for while interning at The Wilson Concept.</p>
                 </div>
-              </figure>
-              <div class="popup-content">
-                <h3>ZV Body Shop</h3>
-                <p>ZV Body Shop is an up and coming auto and body shop business in the Northeast Philadelphia region. They approached me for a basic logo to represent the business.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#project-popup-5" class="project-link">
-              <span class="project-icon">
-                <img src="./resources/images/project-icon-5.png">
-              </span>
-            </a>
-            <div id="project-details-5" class="popup">
-              <span class="close">&times;</span>
-              <figure>
-                <div class="carousel">
-                  <img src="./resources/images/lena/logo-1.jpg">
-                  <img src="./resources/images/lena/logo-2.jpg">
-                  <img src="./resources/images/lena/logo-3.jpg">
-                  <img src="./resources/images/lena/logo-final.jpg">
-                  <img src="./resources/images/lena/cards.jpg">
-                </div>
-              </figure>
-              <div class="popup-content">
-                <h3>Glorious Flowers</h3>
-                <p>Glorious Flowers is an independent flower arrangement business. As a business getting up on their feet, the owner asked me to create a logo that reflects her personality as well as the business.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-md-4">
-            <a href="#project-popup-6" class="project-link">
-              <span class="project-icon">
-                <img src="./resources/images/project-icon-6.png">
-              </span>
-            </a>
-            <div id="project-details-6" class="popup">
-              <span class="close">&times;</span>
-              <figure>
-                <div class="carousel">
-                  <img src="./resources/images/pixelart/p-1.gif">
-                  <img src="./resources/images/pixelart/p-2.gif">
-                  <img src="./resources/images/pixelart/p-3.jpg">
-                </div>
-              </figure>
-              <div class="popup-content">
-                <h3>Pixel Art</h3>
-                <p>EPOS is an online graphic novel company with not much of a backstory but I still wanted to showcase my work I did for them.
-                  They were my second client I designed logos for while interning at The Wilson Concept.</p>
               </div>
             </div>
           </div>
@@ -388,44 +469,46 @@
 
     <!-- CONTACT START-->
     <section id="contact">
-      <div class="container">
-        <header class="heading">
-          <h2>Contact</h2>
-        </header>
-        <form action="mailto:bezouglovak@gmail.com" method="post" enctype="text/plain">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="input">
-                <label for "name">Name</label>
-                <div class="input-field">
-                  <input type="text" name="name" id="name">
+      <div class="content-inner">
+        <div class="container">
+          <header class="heading">
+            <h2>Contact</h2>
+          </header>
+          <form action="mailto:bezouglovak@gmail.com" method="post" enctype="text/plain">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="input">
+                  <label for "name">Name</label>
+                  <div class="input-field">
+                    <input type="text" name="name" id="name">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md -6">
+                <div class="input">
+                  <label for "email">Email</label>
+                  <div class="input-field">
+                    <input type="text" name="email" id="email">
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-md -6">
-              <div class="input">
-                <label for "email">Email</label>
-                <div class="input-field">
-                  <input type="text" name="email" id="email">
-                </div>
+            <div class="comments">
+              <label for "message">Comment</label>
+              <div class="input-field">
+                <input type="text" name ="message" id="message">
               </div>
             </div>
-          </div>
-          <div class="comments">
-            <label for "message">Comment</label>
-            <div class="input-field">
-              <input type="text" name ="message" id="message">
+            <div class="submit-btn">
+              <input type="submit" value="Send" class="btn btn-primary btn-bordered">
             </div>
-          </div>
-          <div class="submit-btn">
-            <input type="submit" value="Send" class="btn btn-primary btn-bordered">
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
     <!-- CONTACT END-->
 
-    <!-- JQUERY-->
+    <!-- SCRIPTS-->
     <script src="./resources/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
