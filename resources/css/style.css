@@ -232,7 +232,8 @@ section .content-inner {
 
 #about {
   background-color: #ffffff;
-  height: 700px;
+  height: auto;
+  padding-bottom:5%;
   font-size: 1.3rem;
 }
 
@@ -338,6 +339,57 @@ svg {
 
 #experience {
   background-color:  #ffffff;
-  height: 1000px;
+  height: auto;
   font-size: 1.3rem;
+}
+
+#experience .experience-block {
+  position: relative;
+  padding: 5% 0 5% 50%;
+  margin: 2em;
+}
+
+#experience .experience-block:nth-child(2n) {
+  position: relative;
+  padding: 5% 50% 5% 0;
+  margin: 2em;
+  text-align: right;
+}
+
+#icon {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  display: inline-block;
+  margin: 0 0 0 -35px;
+  color:#e3a2a2;
+}
+
+#icon-b {
+  position: absolute;
+  right: 25%;
+  top: 50%;
+  display: inline-block;
+  margin: 0 0 0 -35px;
+  color:#e3a2a2;
+}
+
+/*.even {
+  border-left: 2px solid  #e3a2a2;
+  padding-left: 20%;
+}
+
+.odd {
+  border-right: 2px solid  #e3a2a2;
+  padding-right: 20%;
+}*/
+
+.date {
+  color: #e3a2a2;
+  font-size: 1.3rem;
+}
+
+.experience-block h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
 }

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kristina Bee</title>
     <link rel="stylesheet" type="text/css" href="./resources/slick/slick.css"/>
-    <link href="favicon.png" rel="icon" type="image/png">
+    <link rel="stylesheet" href="./resources/css/font-awesome/css/font-awesome.min.css">
     <link href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/animate.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/js/aos/aos.css" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:300,400,700|Yantramanav|Yellowtail" rel="stylesheet">
   </head>
@@ -205,10 +206,10 @@
           </header>
           <div class="experience">
             <div class="experience-block">
-              <div class="icon wow bounceIn">
-                <i class="fa fa-briefcase"></i>
+              <div id="icon" data-aos="fade-right">
+                <i class="fa fa-briefcase fa-3x"></i>
               </div>
-              <div class="experience-block-content wow fadeInRight">
+              <div class="experience-block-content even" data-aos="fade-left">
                 <div class="date">2014+</div>
                 <h3>Secretary - Eviama Life Spa</h3>
                 <p>Managed appointments and filed client information. Organized schedules, events, large parties. Maintained contact between the business and PR Manager.
@@ -216,20 +217,20 @@
               </div>
             </div>
             <div class="experience-block">
-              <div class="icon wow bounceIn">
-                <i class="fa fa-mortar-board"></i>
+              <div id="icon-b" data-aos="fade-left">
+                <i class="fa fa-mortar-board fa-3x"></i>
               </div>
-              <div class="experience-block-content wow fadeInLeft">
+              <div class="experience-block-content odd" data-aos="fade-right">
                 <div class="date">September 2017 - October 2017</div>
                 <h3>New York Code + Design Academy</h3>
                 <p>Honed and utilized HTML5, CSS3, Javascript, Jquery, and Git skills to create a variety of projects.</p>
               </div>
             </div>
             <div class="experience-block">
-              <div class="icon wow bounceIn">
-                <i class="fa fa-mortar-board"></i>
+              <div id="icon" data-aos="fade-right">
+                <i class="fa fa-mortar-board fa-3x"></i>
               </div>
-              <div class="experience-block-content wow fadeInRight">
+              <div class="experience-block-content even" data-aos="fade-left">
                 <div class="date">August 2017 - October 2-17</div>
                 <h3>Codecademy PRO</h3>
                 <p>Learned HTML5, CSS3, and Javascript to create a variety of functioning and responsive webpages. Translated design documents to front-end code.
@@ -237,20 +238,20 @@
               </div>
             </div>
             <div class="experience-block">
-              <div class="icon wow bounceIn">
-                <i class="fa fa-briefcase"></i>
+              <div id="icon-b" data-aos="fade-left">
+                <i class="fa fa-briefcase fa-3x"></i>
               </div>
-              <div class="experience-block-content wow fadeInLeft">
+              <div class="experience-block-content odd" data-aos="fade-right">
                 <div class="date">February 2017 - June 2017</div>
                 <h3>Graphic Design Intern - The Wilson Concept</h3>
                 <p>Designed logos and business cards for a variety of clients.</p>
               </div>
             </div>
             <div class="experience-block">
-              <div class="icon wow bounceIn">
-                <i class="fa fa-briefcase"></i>
+              <div id="icon" data-aos="fade-right">
+                <i class="fa fa-briefcase fa-3x"></i>
               </div>
-              <div class="experience-block-content wow fadeInRight">
+              <div class="experience-block-content even" data-aos="fade-left">
                 <div class="date">September 2012 - July 2016</div>
                 <h3>Drexel University B.Sc. Game Art and Production</h3>
                 <p>Cum Laude
@@ -258,10 +259,10 @@
               </div>
             </div>
             <div class="experience-block">
-              <div class="icon wow bounceIn">
-                <i class="fa fa-briefcase"></i>
+              <div id="icon-b" data-aos="fade-left">
+                <i class="fa fa-briefcase fa-3x"></i>
               </div>
-              <div class="experience-block-content wow fadeInLeft">
+              <div class="experience-block-content odd" data-aos="fade-right">
                 <div class="date">March 2016 - September 2016</div>
                 <h3>Intern - Amanda Stevenson Photography</h3>
                 <p>Assembled equipment and assisted in photo shoots. Retouched photos in Lightroom and Photoshop.
@@ -518,5 +519,14 @@
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script type="text/javascript" src="./resources/slick/slick.min.js"></script>
     <script type="text/javascript" src="./resources/js/main.js"></script>
+    <script src="./resources/js/aos/aos.js"></script>
+    <script type="text/javascript">
+      AOS.init( {
+        offset: 200,
+        duration: 600,
+        delay: 100,
+        easing: 'ease',
+      });
+    </script>
   </body>
 </html>
