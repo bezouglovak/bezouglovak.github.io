@@ -688,10 +688,27 @@ input, textarea {
     display: none;
   }
 
+  #home {
+    margin: auto;
+    justify-content: center;
+  }
+
+  #home .jumbotron {
+    height: auto;
+    width: auto;
+  }
+
   #about .container {
+    background-size: contain;
     position: relative;
     margin: auto;
     padding: 0;
+  }
+
+  .home-text {
+    height: 70px;
+    font-size: 1.5rem;
+    width: auto;
   }
 
   #experience #icon {
