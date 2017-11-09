@@ -600,7 +600,7 @@ input, textarea {
 .button {
   display: inline-block;
    text-align: center;
-  margin-left: 55px;
+   margin-left: 55px;
 }
 .message {
     font-family: 'Nunito', sans-serif;
@@ -652,8 +652,29 @@ input, textarea {
 
 /* MOBILE */
 
-@media only screen and (min-width: 380px) {
-  .jumbotron {
-    width: auto;
+@media only screen and (max-width: 360px) {
+  #services .row .col-xs-12 {
+    padding-bottom: 20%;
+  }
+
+  #services .row .col-xs-12:last-child {
+    padding-bottom: 20%;
+  }
+
+  #contact .message-input {
+    text-align: center;
+    border-right: 0;
+    border-bottom: 2px solid #e3a2a2;
+  }
+
+  #contact .button {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  header {
+    justify-content: center;
+    height: 7rem;
   }
 }
