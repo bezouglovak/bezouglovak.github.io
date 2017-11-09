@@ -651,14 +651,68 @@ input, textarea {
 }
 
 /* MOBILE */
+@media only screen and (max-width: 770px) {
 
-@media only screen and (max-width: 360px) {
+  #services .row .col-md-4 {
+    padding-bottom: 20%;
+  }
+
+  #services .row .col-md-6:last-child {
+    padding-bottom: 0;
+  }
+
+  #services .row .col-md-6 {
+    padding-bottom: 20%;
+  }
+
+  #services .row .col-md-4:last-child {
+    padding-bottom: 0;
+  }
+
+  #contact .message-input {
+    text-align: center;
+    border-right: 0;
+    border-bottom: 2px solid #e3a2a2;
+    padding-bottom: 5%;
+  }
+
+  .social {
+    padding-top: 5%;
+  }
+}
+
+
+@media only screen and (max-width: 380px) {
+
+  .topbar {
+    display: none;
+  }
+
+  #about .container {
+    position: relative;
+    margin: auto;
+    padding: 0;
+  }
+
+  #experience #icon {
+    display: none;
+  }
+
+  #experience .experience-block {
+    margin: auto;
+    padding:0;
+  }
+
+  #experience .experience-block-content {
+    justify-content: center;
+  }
+
   #services .row .col-xs-12 {
     padding-bottom: 20%;
   }
 
   #services .row .col-xs-12:last-child {
-    padding-bottom: 20%;
+    padding-bottom: 5%;
   }
 
   #contact .message-input {
@@ -669,12 +723,5 @@ input, textarea {
 
   #contact .button {
     margin: auto;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  header {
-    justify-content: center;
-    height: 7rem;
   }
 }
