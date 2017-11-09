@@ -209,7 +209,7 @@ section .content-inner {
 
 .row {
   margin: auto;
-  padding: 0;
+  padding-bottom: 5%;
   text-align: center;
 }
 
@@ -245,13 +245,9 @@ section .content-inner {
   padding: 0 200px 0 200px;
 }
 
-#about .row .col-md-4 {
-  width: 30%;
-}
-
-#about .row .col-md-8 {
-  width: 65%;
-  padding-left: 20%;
+#about .col-md-6:nth-child(2) {
+  text-align: center;
+  padding: 0 10%;
 }
 
 #about h3 {
@@ -652,4 +648,12 @@ input, textarea {
 
 .social li a:hover {
   color: #c27777;
+}
+
+/* MOBILE */
+
+@media only screen and (min-width: 380px) {
+  .jumbotron {
+    width: auto;
+  }
 }
