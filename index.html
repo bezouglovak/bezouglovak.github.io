@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<!-- Still being tweaked! -->
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -11,6 +14,8 @@
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/animate.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="./resources/js/aos/aos.css" type="text/css">
+    <!-- <link rel="stylesheet" type="text/css" href="./resources/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./resources/slick/slick-theme.css"/> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:300,400,700|Yantramanav|Yellowtail" rel="stylesheet">
   </head>
@@ -24,7 +29,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#work">My Work</a></li>
+          <!-- <li><a href="#work">My Work</a></li> -->
           <li><a href="#contact">Contact</a></li>
         </ul>
         <button type="button" class="btn btn-primary btn-nav">
@@ -332,143 +337,153 @@
           </header>
           <div class="row work">
             <div class="col-xs-6 col-md-4">
-              <a href="#project-popup-1" class="project-link">
-                <span class="project-icon">
-                  <img src="./resources/images/project-icon-1.png">
-                </span>
+              <!-- PROJECT 1 -->
+              <!-- Trigger/Open The Modal -->
+              <a href="#modal-prj-1" id="proj-1-btn">
+                <img src="./resources/images/project-icon-1.png">
               </a>
-              <div id="project-details-1" class="popup">
-                <span class="close">&times;</span>
-                <figure>
-                  <div class="carousel">
-                    <img src="./resources/images/asp/cards-1.jpg">
-                    <img src="./resources/images/asp/cards-2.jpg">
-                    <img src="./resources/images/asp/camera-icons.jpg">
-                    <img src="./resources/images/asp/giftcard.jpg">
-                    <img src="./resources/images/asp/qrcodes.jpg">
-                    <img src="./resources/images/asp/resume.jpg">
-                    <img src="./resources/images/asp/stepandrepeat.jpg">
-                  </div>
-                </figure>
-                <div class="popup-content">
+              <!-- The Modal -->
+              <div id="modal-prj-1" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
                   <h3>Amanda Stevenson Photography</h3>
                   <p>Amanda Stevenson Photography is an independent Philadelphia-based photographed I did my co-op with during the spring and summer of 2015.
                     I interned with her as a graphic designer. During my time with her is also when I realized I enjoyed doing more graphic work than the 3D focused work I was doing at school.
                     Over the six months I spent working with her, I re-branded, created several business cards, and a few other elements for her business to draw in clients.</p>
+                  <div class="carousel">
+                    <img src="./resources/images/asp/cards-1.jpg">
+                    <img src="./resources/images/asp/cards-2.jpg">
+                    <img src="./resources/images/asp/giftcard.jpg">
+                    <img src="./resources/images/asp/resume.jpg">
+                    <img src="./resources/images/asp/stepandrepeat.jpg">
+                    <img src="./resources/images/asp/qrcodes.jpg">
+                    <img src="./resources/images/asp/camera-icons.jpg">
+                  </div>
                 </div>
               </div>
             </div>
+
             <div class="col-xs-6 col-md-4">
-              <a href="#project-popup-2" class="project-link">
-                <span class="project-icon">
-                  <img src="./resources/images/project-icon-2.png">
-                </span>
+              <!-- PROJECT 2 -->
+              <!-- Trigger/Open The Modal -->
+              <a href="#modal-prj-2" id="proj-2-btn">
+                <img src="./resources/images/project-icon-2.png">
               </a>
-              <div id="project-details-2" class="popup">
-                <span class="close">&times;</span>
-                <figure>
-                  <div class="carousel">
-                    <img src="./resources/images/lmb/logo.jpg">
-                    <img src="./resources/images/lmb/cards-1.jpg">
-                    <img src="./resources/images/lmb/cards-2.jpg">
-                  </div>
-                </figure>
-                <div class="popup-content">
+              <!-- The Modal -->
+              <div id="modal-prj-2" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
                   <h3>Lorina Marshall-Blake</h3>
                   <p>Lorina Marshall Blake is another client I had the pleasure of creating a logo for during my internship for The Wilson Concept.
                     Lorina describes herself as an out-of-the-box person and wanted her brand to make a statement. She was very fond of golds, teals, and rose colors.
-                    She wanted her brand to make a bold yet feminine appearance. At first, I wanted to create a seamless ribbon-like logo for Lorina.
-                    It was bold and had the colors she liked, but it was a bit too intricate as a logo. Instead, I decided to incorporate a rose into her logo design and I was very pleased with how it turned out.
-                    I also created some business card mock-ups to go along with the new logo and following the outline given to me from a project brief which included the tagline.</p>
+                    She wanted her brand to make a bold yet feminine appearance.
+                     I decided to incorporate a rose into her logo design and I was very pleased with how it turned out.
+                     I also created some business card mock-ups to go along with the new logo and following the outline given to me from a project brief which included the tagline.</p>
+                  <div class="carousel">
+                    <img src="./resources/images/lmb/logo.png">
+                    <img src="./resources/images/lmb/cards-1.jpg">
+                    <img src="./resources/images/lmb/cards-2.jpg">
+                  </div>
                 </div>
               </div>
             </div>
             <div class="col-xs-6 col-md-4">
-              <a href="#project-popup-3" class="project-link">
-                <span class="project-icon">
-                  <img src="./resources/images/project-icon-3.png">
-                </span>
+              <!-- PROJECT 3 -->
+              <!-- Trigger/Open The Modal -->
+              <a href="#modal-prj-3" id="proj-3-btn">
+                <img src="./resources/images/project-icon-3.png">
               </a>
-              <div id="project-details-3" class="popup">
-                <span class="close">&times;</span>
-                <figure>
+              <!-- The Modal -->
+              <div id="modal-prj-3" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>EPOS</h3>
+                  <p>
+                  EPOS is an online graphic novel company with not much of a backstory but I still wanted to showcase my work I did for them.
+                  They were my second client I designed logos for while interning at The Wilson Concept.</p>
                   <div class="carousel">
                     <img src="./resources/images/epos/epos-old.jpg">
                     <img src="./resources/images/epos/epos-final.jpg">
                     <img src="./resources/images/epos/cards.jpg">
                   </div>
-                </figure>
-                <div class="popup-content">
-                  <h3>EPOS</h3>
-                  <p>EPOS is an online graphic novel company with not much of a backstory but I still wanted to showcase my work I did for them.
-                    They were my second client I designed logos for while interning at The Wilson Concept.</p>
                 </div>
               </div>
             </div>
           </div>
           <div class="row work">
             <div class="col-xs-6 col-md-4">
-              <a href="#project-popup-4" class="project-link">
-                <span class="project-icon">
-                  <img src="./resources/images/project-icon-4.png">
-                </span>
+              <!-- PROJECT 4 -->
+              <!-- Trigger/Open The Modal -->
+              <a href="#modal-prj-4" id="proj-4-btn">
+                <img src="./resources/images/project-icon-4.png">
               </a>
-              <div id="project-details-4" class="popup">
-                <span class="close">&times;</span>
-                <figure>
+              <!-- The Modal -->
+              <div id="modal-prj-4" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>ZV Body Shop</h3>
+                  <p>ZV Body Shop is an up and coming autobody shop in Northeast Philadelphia. The owners reached out to me to create a simple logo for their business.</p>
                   <div class="carousel">
                     <img src="./resources/images/zv/logo-old.jpg">
+                    <p>An older version of the logo.</p>
                     <img src="./resources/images/zv/logo-final.png">
                   </div>
-                </figure>
-                <div class="popup-content">
-                  <h3>ZV Body Shop</h3>
-                  <p>ZV Body Shop is an up and coming auto and body shop business in the Northeast Philadelphia region. They approached me for a basic logo to represent the business.</p>
                 </div>
               </div>
             </div>
             <div class="col-xs-6 col-md-4">
-              <a href="#project-popup-5" class="project-link">
-                <span class="project-icon">
-                  <img src="./resources/images/project-icon-5.png">
-                </span>
+              <!-- PROJECT 5 -->
+              <!-- Trigger/Open The Modal -->
+              <a href="#modal-prj-5" id="proj-5-btn">
+                <img src="./resources/images/project-icon-5.png">
               </a>
-              <div id="project-details-5" class="popup">
-                <span class="close">&times;</span>
-                <figure>
+              <!-- The Modal -->
+              <div id="modal-prj-5" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Glorious Flowers</h3>
+                  <p>Glorious Flowers is an up and coming independently owned flower arrangement business. The owner is a close family friend and she had asked me to design
+                  a logo for her business as well as business card mock-ups. I went through several iterations of the logo until I hit the sweet spot we both agreed on.</p>
                   <div class="carousel">
                     <img src="./resources/images/lena/logo-1.jpg">
                     <img src="./resources/images/lena/logo-2.jpg">
                     <img src="./resources/images/lena/logo-3.jpg">
                     <img src="./resources/images/lena/logo-final.jpg">
+                    <p>Several logo redo's before agreeing on the final one.</p>
                     <img src="./resources/images/lena/cards.jpg">
                   </div>
-                </figure>
-                <div class="popup-content">
-                  <h3>Glorious Flowers</h3>
-                  <p>Glorious Flowers is an independent flower arrangement business. As a business getting up on their feet, the owner asked me to create a logo that reflects her personality as well as the business.</p>
                 </div>
               </div>
             </div>
             <div class="col-xs-6 col-md-4">
-              <a href="#project-popup-6" class="project-link">
-                <span class="project-icon">
-                  <img src="./resources/images/project-icon-6.png">
-                </span>
+              <!-- PROJECT 6 -->
+              <!-- Trigger/Open The Modal -->
+              <a href="#modal-prj-6" id="proj-6-btn">
+                <img src="./resources/images/project-icon-6.png">
               </a>
-              <div id="project-details-6" class="popup">
-                <span class="close">&times;</span>
-                <figure>
+              <!-- The Modal -->
+              <div id="modal-prj-6" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Pixel Art</h3>
+                  <p>A collection of some pixel art I have made.</p>
                   <div class="carousel">
                     <img src="./resources/images/pixelart/p-1.gif">
                     <img src="./resources/images/pixelart/p-2.gif">
                     <img src="./resources/images/pixelart/p-3.jpg">
                   </div>
-                </figure>
-                <div class="popup-content">
-                  <h3>Pixel Art</h3>
-                  <p>EPOS is an online graphic novel company with not much of a backstory but I still wanted to showcase my work I did for them.
-                    They were my second client I designed logos for while interning at The Wilson Concept.</p>
                 </div>
               </div>
             </div>
@@ -485,35 +500,33 @@
           <header class="heading">
             <h2>Contact</h2>
           </header>
-          <form action="mailto:bezouglovak@gmail.com" method="post" enctype="text/plain">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="input">
-                  <label for "name">Name</label>
-                  <div class="input-field">
-                    <input type="text" name="name" id="name">
-                  </div>
-                </div>
+          <div class="message-input col-xs-4 col-md-6">
+            <form action="mailto:bezouglovak@gmail.com" method="post" enctype="text/plain">
+            <div class="text-container">
+              <!-- name input -->
+              <input type="text" name="name" placeholder="Name" /><br/>
+              <!-- email input -->
+              <input  type="email" name="email" placeholder="Email" /><br/>
+              <!-- message input -->
+              <textarea type="text" name="message" placeholder="Message"></textarea><br/>
+              <!-- sent -->
+              <div class="message">Message Sent</div>
+              <div class="button">
+                <!-- button -->
+                <button class="submit" id="submit" type="submit">
+                Send
+              </button>
               </div>
-              <div class="col-md -6">
-                <div class="input">
-                  <label for "email">Email</label>
-                  <div class="input-field">
-                    <input type="text" name="email" id="email">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="comments">
-              <label for "message">Comment</label>
-              <div class="input-field">
-                <input type="text" name ="message" id="message">
-              </div>
-            </div>
-            <div class="submit-btn">
-              <input type="submit" value="Send" class="btn btn-primary btn-bordered">
             </div>
           </form>
+          </div>
+          <div class="social col-xs-4 col-md-6">
+            <h3>CONNECT</h3>
+            <ul>
+              <li><a href="https://github.com/bezouglovak"><i class="fa fa-github fa-3x"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/kristina-bezouglova/"><i class="fa fa-linkedin fa-3x"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -524,10 +537,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- <script type="text/javascript" src="./resources/slick/slick.min.js"></script> -->
+    <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
     <script src="./resources/js/particles/particles.js"></script>
     <script src="./resources/js/particles/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script type="text/javascript" src="./resources/slick/slick.min.js"></script>
     <script type="text/javascript" src="./resources/js/main.js"></script>
     <script src="./resources/js/aos/aos.js"></script>
     <script type="text/javascript">

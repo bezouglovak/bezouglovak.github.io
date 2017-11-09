@@ -49,20 +49,20 @@ canvas {
   top: 0;
 }
 
-ul {
+.topbar ul {
   margin: 0;
   display: flex;
   list-style: none;
 }
 
-li {
+.topbar li {
   list-style: none;
   display: block;
   margin: 0 auto;
   padding: 2rem 0 2rem 0;
 }
 
-ul li a {
+.topbar ul li a {
   text-decoration: none;
   color: #e3a2a2;
   font-family: 'Nunito', sans-serif;
@@ -70,7 +70,7 @@ ul li a {
   font-size: 1.2rem;
 }
 
-ul li a:hover {
+.topbar ul li a:hover {
   text-decoration: none;
   color: #c27777;
 }
@@ -356,6 +356,14 @@ svg {
   text-align: right;
 }
 
+#experience .experience-block {
+  border-bottom: 2px solid #e3a2a2;
+}
+
+#experience .experience-block:last-child {
+  border: 0;
+}
+
 #icon {
   position: absolute;
   left: 25%;
@@ -440,4 +448,208 @@ svg {
   bottom: -53.0330px;
   border-bottom: solid 4.2426px #ffffff;
   border-left: solid 4.2426px #ffffff;
+}
+
+#work {
+  display: none;
+}
+
+#work {
+  background-color: #ffffff;
+  height: auto;
+  padding-bottom: 5%;
+}
+
+#work .heading {
+  color: #e3a2a2;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  color: #e3a2a2;
+  font-size: 3rem;
+  font-family: 'Yellowtail', cursive;
+  padding-bottom: 3%;
+}
+
+.modal-content p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.modal img {
+  width: 50%;
+  height: auto;
+  padding-top: 3%;
+}
+
+#contact {
+  height: auto;
+  background-color: #ffffff;
+  padding-bottom: 5%;
+}
+
+#contact .heading {
+  color: #e3a2a2;
+}
+
+.message-input {
+  border-right: 2px solid #e3a2a2;
+}
+
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:100px;
+  margin-bottom:10px;
+}
+input:first-of-type
+{
+  margin-top:35px;
+}
+input, textarea {
+  font-size: 1.2rem;
+  padding: 15px 10px 10px;
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid #cecece;
+  background: #F3F5F6;
+  color:#4c4c4c;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px;
+}
+::-webkit-input-placeholder {
+   color: #4c4c4c;
+}
+:-moz-placeholder {
+   color: #4c4c4c;
+}
+::-moz-placeholder {
+   color: #4c4c4c;
+}
+:-ms-input-placeholder {
+   color: #4c4c4c;
+}
+/* button */
+.submit {
+  position: relative;
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: -55px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: #e3a2a2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 70px;
+  padding-left: 35px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #CBDFE0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  width: 30%;
+  color: #fff;
+}
+.submit:hover {
+  background:#c27777;
+}
+.button {
+  display: inline-block;
+   text-align: center;
+  margin-left: 55px;
+}
+.message {
+    font-family: 'Nunito', sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:#2ABCA7;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+
+.social {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  color: #e3a2a2;
+  text-align: center;
+}
+
+.social h3 {
+  padding-bottom: 2%;
+}
+
+.social ul {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  list-style: none;
+}
+
+.social li {
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0 2rem 0;
+}
+
+.social li a {
+  color: #e3a2a2;
+}
+
+.social li a:hover {
+  color: #c27777;
 }
