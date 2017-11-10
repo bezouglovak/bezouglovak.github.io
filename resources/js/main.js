@@ -199,15 +199,12 @@ $(document).ready(function() {
   }
 
 
-  /* SLICK CAROUSEL */
-
-  // $(document).ready(function(){
-  // $('.carousel').slick({
-  //   arrows: true,
-  //   adaptiveHeight: true,
-  //   autoplay: false,
-  //   pauseOnHover: false,
-  //   pauseOnFocus: false
-  // });
+  $('#word-shuffle').textition({
+   speed: 2,
+   animation: 'ease-out',
+   map: {x: 200, y: 100, z: 0},
+   autoplay: true,
+   interval: 1.5
+  })
 
 });

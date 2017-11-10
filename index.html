@@ -15,9 +15,10 @@
     <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     <link href="./resources/css/animate.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="./resources/js/aos/aos.css" type="text/css">
+    <script type="text/javascript" src="./resources/js/jquery-3.2.1.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="./resources/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./resources/slick/slick-theme.css"/> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./resources/js/textition.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700|Roboto:300,400,700|Yantramanav|Yellowtail" rel="stylesheet">
   </head>
   <body>
@@ -48,13 +49,16 @@
         <div class="content-inner">
           <div class="container-fluid">
             <div class="home-content">
-            <div class="home-text">
-              <span class="fname">KRISTINA</span><span class="lname">BEZOUGLOVA</span>
+              <div class="home-text">
+                <span class="fname">KRISTINA</span><span class="lname">BEZOUGLOVA</span>
+              </div>
             </div>
-            <span class="animated-letters">
-              <!-- TO BE EDITED -->
-            </span>
           </div>
+          <div id="autoplay">
+            <span>Creator</span>
+            <span>Designer</span>
+            <span>Cat Enthusiast</span>
+            <span>Magician</span>
           </div>
         </div>
       </div>
@@ -534,14 +538,13 @@
     <!-- CONTACT END-->
 
     <!-- SCRIPTS-->
-    <script src="./resources/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <!-- <script type="text/javascript" src="./resources/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <script src="./resources/bootstrap/js/bootstrap.min.js"></script>
     <script src="./resources/js/particles/particles.js"></script>
     <script src="./resources/js/particles/app.js"></script>
+    <!-- <script type="text/javascript" src="./resources/slick/slick.min.js"></script> -->
     <script type="text/javascript" src="./resources/js/main.js"></script>
     <script src="./resources/js/aos/aos.js"></script>
     <script type="text/javascript">
@@ -551,6 +554,15 @@
         delay: 100,
         easing: 'ease',
       });
+    </script>
+    <script type="text/javascript">
+      $('#autoplay').textition({
+       speed: 1,
+       animation: 'ease-out',
+       map: {x: 200, y: 100, z: 0},
+       autoplay: true,
+       interval: 1.5
+      })
     </script>
   </body>
 </html>
