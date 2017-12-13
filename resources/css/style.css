@@ -1,5 +1,5 @@
 html {
-  background-color: #e3a2a2;
+  background-color: #48305c;
   font-size: 12px;
 }
 
@@ -41,7 +41,7 @@ canvas {
   height: 75px;
   transition: 500ms;
   background-color: white;
-  border-bottom: 1px solid #e3a2a2;
+  border-bottom: 1px solid #48305c;
   z-index: 1;
 }
 
@@ -64,7 +64,7 @@ canvas {
 
 .topbar ul li a {
   text-decoration: none;
-  color: #e3a2a2;
+  color: #48305c;
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
@@ -72,7 +72,7 @@ canvas {
 
 .topbar ul li a:hover {
   text-decoration: none;
-  color: #c27777;
+  color: #2a1838;
 }
 
 .btn-nav {
@@ -96,15 +96,15 @@ canvas {
 }
 
 .btn-nav:hover {
-  background: #c27777;
+  background: #2a1838;
 }
 
 .btn-nav:active {
-  background: #c27777;
+  background: #2a1838;
 }
 
 .btn-nav:focus {
-  background: #c27777;
+  background: #2a1838;
 }
 
 .btn-nav span {
@@ -115,7 +115,7 @@ canvas {
   left: 6px;
   position: absolute;
   transition: 500ms;
-  background: #e3a2a2;
+  background: #48305c;
   z-index: 9999;
 }
 
@@ -126,7 +126,7 @@ canvas {
   left: 0;
   width: 100%;
   height: 0.2rem;
-  background: #e3a2a2;
+  background: #48305c;
   z-index: 9999;
 }
 
@@ -137,14 +137,14 @@ canvas {
   left: 0;
   width: 100%;
   height: 0.2rem;
-  background: #e3a2a2;
+  background: #48305c;
   z-index: 9999;
 }
 
 .jumbotron {
   margin: auto;
   background-size: cover;
-  background-color: #e3a2a2;
+  background-color: #48305c;
   background-repeat: no-repeat;
   text-align: center;
   height: 1000px;
@@ -206,6 +206,7 @@ section .content-inner {
   text-align: center;
   margin: 0;
   display: block;
+  width: auto;
   height: 200px !important;
 }
 
@@ -257,7 +258,7 @@ section .content-inner {
 }
 
 #about .heading, #experience .heading, #work .heading {
-  color: #e3a2a2;
+  color: #48305c;
 }
 
 #about .container {
@@ -272,7 +273,7 @@ section .content-inner {
 #about h3 {
   font-size: 1.6rem;
   font-family: 'Nunito', sans-serif;
-  color: #e3a2a2;
+  color: #48305c;
   letter-spacing: 2px;
 }
 
@@ -280,15 +281,17 @@ section .content-inner {
   margin-top: 30px;
   display: inline-block;
   text-align: center;
+  transition: .5s;
 }
 
 .contact-btn a {
-  color: #e3a2a2;
+  color: #48305c;
 }
 
 .contact-btn a:hover {
   background-color: #e3a2a2;
   color: #ffffff;
+  border: 0;
 }
 
 #about .btn-outline-primary {
@@ -326,9 +329,6 @@ section .content-inner {
   color: #ffffff;
 }
 
-/*$progress-bar-stroke-width: 1;
-$progress-bar-size: 150px;*/
-
 svg {
   height: 200px;
   transform: rotate(-90deg);
@@ -362,6 +362,7 @@ svg {
   position: relative;
   padding: 5% 0 5% 50%;
   margin: 2em;
+  border-bottom: 2px solid #e3a2a2;
 }
 
 #experience .experience-block:nth-child(2n) {
@@ -371,34 +372,28 @@ svg {
   text-align: right;
 }
 
-#experience .experience-block {
-  border-bottom: 2px solid #e3a2a2;
-}
-
 #experience .experience-block:last-child {
   border: 0;
 }
 
-#icon {
+#icon, #icon-b {
   position: absolute;
-  left: 25%;
   top: 50%;
   display: inline-block;
   margin: 0 0 0 -35px;
   color:#e3a2a2;
+}
+
+#icon {
+  left: 25%;
 }
 
 #icon-b {
-  position: absolute;
   right: 25%;
-  top: 50%;
-  display: inline-block;
-  margin: 0 0 0 -35px;
-  color:#e3a2a2;
 }
 
 .date {
-  color: #e3a2a2;
+  color: #48305c;
   font-size: 1.3rem;
 }
 
@@ -476,7 +471,7 @@ svg {
 }
 
 #work .heading {
-  color: #e3a2a2;
+  color: #48305c;
 }
 
 .modal {
@@ -517,7 +512,7 @@ svg {
 }
 
 .modal-content h3 {
-  color: #e3a2a2;
+  color: #48305c;
   font-size: 3rem;
   font-family: 'Yellowtail', cursive;
   padding-bottom: 3%;
@@ -540,11 +535,11 @@ svg {
 }
 
 #contact .heading {
-  color: #e3a2a2;
+  color: #48305c;
 }
 
 .message-input {
-  border-right: 2px solid #e3a2a2;
+  border-right: 2px solid #48305c;
 }
 
 input {
@@ -589,16 +584,16 @@ input, textarea {
 :-ms-input-placeholder {
    color: #4c4c4c;
 }
-/* button */
+
 .submit {
   position: relative;
   display: block;
   font-size: 1.5rem;
   text-align: center;
-  margin-left: -55px;
+  margin-left: -30px;
   margin-top: 15px;
   margin-bottom: 25px;
-  background-color: #e3a2a2;
+  background-color: #48305c;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 70px;
@@ -639,7 +634,7 @@ input, textarea {
 .social {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
-  color: #e3a2a2;
+  color: #48305c;
   text-align: center;
 }
 
@@ -652,6 +647,7 @@ input, textarea {
   margin: auto;
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .social li {
@@ -662,7 +658,7 @@ input, textarea {
 }
 
 .social li a {
-  color: #e3a2a2;
+  color: #48305c;
 }
 
 .social li a:hover {
@@ -670,6 +666,7 @@ input, textarea {
 }
 
 /* MOBILE */
+
 @media only screen and (max-width: 770px) {
 
   #autoplay {
@@ -713,7 +710,7 @@ input, textarea {
 }
 
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 420px) {
 
   .topbar {
     display: none;
@@ -721,6 +718,10 @@ input, textarea {
 
   .jumbotron {
     height: 700px;
+  }
+
+  #about .container {
+    padding: 0;
   }
 
   #home {
@@ -757,13 +758,18 @@ input, textarea {
   }
 
 
-  #experience #icon {
+  #experience #icon, #icon-b {
     display: none;
+  }
+
+  #experience .experience-block:nth-child(2n) {
+    margin: auto;
+    padding: 10px;
   }
 
   #experience .experience-block {
     margin: auto;
-    padding:0;
+    padding: 10px;
   }
 
   #experience .experience-block-content {
@@ -784,7 +790,7 @@ input, textarea {
     border-bottom: 2px solid #e3a2a2;
   }
 
-  #contact .button {
-    margin: auto;
+  #contact .submit {
+    width: 100%;
   }
 }
